@@ -7,13 +7,14 @@ int main(int argc, char** argv)
 
 int a = 0;
 int b = 0; 
-double suma = 0, resta = 0, multiplicacion = 0, division = 0;
+float suma = 0, resta = 0, multiplicacion = 0, division = 0;
 
 cout << "    CALCULADORA  " << endl;
 cout << " Ingrese el valor de a: " ;
 cin  >> a;
 cout << " Ingrese el valor de b: "; 
 cin  >> b;
+
 
 suma = a + b;
 resta = a - b;
