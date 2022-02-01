@@ -15,7 +15,6 @@ cin  >> a;
 cout << " Ingrese el valor de b: "; 
 cin  >> b;
 
-
 suma = a + b;
 resta = a - b;
 multiplicacion = a * b;
