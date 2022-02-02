@@ -4,12 +4,12 @@ using namespace std;
 
 int main(int argc, char** argv) 
 {
-	//Declaración de las variables
+	//Declaracion de las variables
 	int a = 0;
 	int b = 0; 
 	float suma = 0, resta = 0, multiplicacion = 0, division = 0;
 	
-	cout << "    CALCULADORA  " << endl;
+	cout << "    CALCULADORA   " << endl;
 	cout << " Ingrese el valor de a: " ;
 	cin  >> a;
 	cout << " Ingrese el valor de b: "; 
