@@ -12,7 +12,6 @@ int main(int argc, char const *argv[])
     double calculoDescuento = 0;
     double calculoImpuesto = 0;
 
-
     cout << " Ingrese el subtotal de la factura: ";
     cin >> subtotal;
 

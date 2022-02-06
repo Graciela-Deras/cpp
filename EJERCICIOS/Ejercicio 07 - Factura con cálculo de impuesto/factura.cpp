@@ -5,6 +5,7 @@ using namespace std;
 int main(int argc, char const *argv[])
 {
     
+    
     // Datos de entrada
 
     double subtotal = 0;
