@@ -27,7 +27,6 @@ int main(int argc, char const *argv[])
 
     if ( estaExcenta == 'S' || estaExcenta == 's') {
        calculoImpuesto = 0;
-
     } else {
        calculoImpuesto = ( subtotal - calculoDescuento ) * 0.15;
     }
