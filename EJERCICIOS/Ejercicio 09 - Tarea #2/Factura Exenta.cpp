@@ -11,7 +11,7 @@ int main(int argc, char const *argv[])
     int descuento = 0;
     double calculoDescuento = 0;
     double calculoImpuesto = 0;
-    char estaExcenta = 0;
+    char estaExenta = 0;
 
     cout << " Ingrese el subtotal de la factura: ";
     cin  >> subtotal;
@@ -20,12 +20,12 @@ int main(int argc, char const *argv[])
     cin  >> descuento;
     
     cout << " Es una factura excenta? Escriba S si lo es, de lo contrario escriba N: ";
-    cin  >> estaExcenta; 
+    cin  >> estaExenta; 
 
     // Proceso
     calculoDescuento = ( subtotal * descuento ) / 100;
 
-    if ( estaExcenta == 'S' || estaExcenta == 's') {
+    if ( estaExenta == 'S' || estaExenta == 's') {
        calculoImpuesto = 0;
     } else {
        calculoImpuesto = ( subtotal - calculoDescuento ) * 0.15;
