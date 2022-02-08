@@ -40,7 +40,7 @@ int main(int argc, char const *argv[])
                                                    cout << " Obtuviste una C- ";
                                              } else {
                                                    if ( nota >= 46 && nota <= 50) {
-                                                      cout << " Obtuviste una D+ ";
+                                                       cout << " Obtuviste una D+ ";
                                                  } else {
                                                        if ( nota >= 41 && nota <= 45) {
                                                            cout << " Obtuviste una D ";
