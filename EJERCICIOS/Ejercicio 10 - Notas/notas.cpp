@@ -11,23 +11,29 @@ int main(int argc, char const *argv[])
 
     if ( nota >= 95 && nota <=100 ) {
        cout << " Obtuviste una A ";
-    } else 
+    } else {
         if ( nota >= 85 && nota <= 94) {
             cout << " Obtuviste una B ";
-        } else
+        } else {
             if ( nota >= 75 && nota <= 84) {
                  cout << " Obtuviste una C ";
-            } else
+            } else {
                   if ( nota >=65 && nota <= 74) {
                       cout << "Obtuviste una D ";
-                  } else
+                  } else {
                        if ( nota >= 60 && nota <= 64) {
                            cout << " Obtuviste una E ";
-                       } else
+                       } else {
                              if (nota >=0 && nota <= 60) {
                                 cout << " Obtuviste una F :(";
                             } else {
                               cout << " Ingrese una nota entre 0 y 100 ";   
-                            }                  
+                            }   
+                       }
+                  }
+            }
+        }
+    }   
+
     return 0;
 }
