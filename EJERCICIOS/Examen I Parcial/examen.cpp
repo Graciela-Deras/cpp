@@ -12,13 +12,13 @@ char GetChar(int iGenerator, char cBase, int iRange) {
 
 int main() {
 	string contrasena;
-	
-	cout << "Eres un agente? ingresa tu contraseña ";
-	cin >> contrasena;
-	
-	if (contrasena == "smith" || contrasena == "neo") {
-		system("COLOR 02");
 
+		cout << "Eres un agente? ingresa tu contraseña ";
+		cin >> contrasena;
+		
+		if (contrasena == "smith" || contrasena == "neo") {
+		system("COLOR 02");
+		
 		char caRow[80];
 		int j = 7;
 		int k = 2;
@@ -47,14 +47,19 @@ int main() {
 			
 			// incremente el valor de 3000000 para retrasar el proceso
 			i = 0;
-			while (i < 300000) {
+			while (i < 10) {
 				GetChar(1, 1, 1);
 				 ++i;
 			}
-		}		
+			if ( i == 10) { 
+					 break;
+				 }
+			}
+
 	} else {
 		cout << "acceso a la matrix denegado";
 	}
+
 
     return 0;
 }
