@@ -36,6 +36,7 @@ void productos ( int opcion)
                 return;
                 break;
             }
+
         }
 
         cout << endl; 
@@ -48,34 +49,6 @@ void productos ( int opcion)
     {
         cout << " BEBIDAS FRIAS " << endl;
         cout << " ************* " << endl;
-        cout << " 1 - Jugo naturales " << endl;
-        cout << " 2 - Granitas " << endl;
-        cout << " 3 - Mochaccino supreme " << endl;
-
-        cout << endl;
-        cout << " Ingrese una opcion: ";
-        cin  >> opcionProducto;
-
-        switch (opcionProducto)
-        {
-        case 1:
-            agregarProducto ( " 1 Jugo natural - L. 15.00 ", 1, 10);
-            break;
-
-        case 2:
-            agregarProducto ( " 2 Granitas - L. 50.00 ", 1, 50);
-            break;
-        
-        case 3: 
-            agregarProducto ( " 3 Mocaccino Supreme - L. 60.00 ", 1, 60);
-        
-        default:
-            {
-                cout << " Opción no valida ";
-                return;
-                break;
-            }
-        }
         system ( "pause");
         break;
     }
@@ -83,34 +56,6 @@ void productos ( int opcion)
     {
         cout << " BEBIDAS REPOSTERIA " << endl;
         cout << " ****************** " << endl;
-        cout << " 1 - Pastel de chocolate " << endl;
-        cout << " 2 - Semitas caseras " << endl;
-        cout << " 3 - Cheesecake " << endl;
-        
-        cout << endl;
-        cout << " Ingrese una opcion: ";
-        cin  >> opcionProducto;
-
-        switch (opcionProducto)
-        {
-        case 1:
-            agregarProducto ( " 1 Pastel de Chocolate - L. 40.00 ", 1, 40);
-            break;
-
-        case 2:
-            agregarProducto ( " 2 Semitas Caseras - L. 30.00 ", 1, 30);
-            break;
-        
-        case 3: 
-            agregarProducto ( " 3 Cheesecake - L. 35.00 ", 1, 35);
-        
-        default:
-            {
-                cout << " Opción no valida ";
-                return;
-                break;
-            }
-        }
         system ( "pause");
         break;
     }

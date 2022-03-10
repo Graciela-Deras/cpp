@@ -17,12 +17,11 @@ void menu ()
         cout << "******";
         cout << endl;
         cout << endl;
-        cout << endl;
 
         cout << " 1. Bebidas Calientes" << endl;
         cout << " 2. Bebidas Frias " << endl;
         cout << " 3. Reposteria " << endl;
-        cout << " 5. Imprimir Factura " << endl;
+        cout << " 4. Imprimir Factura " << endl;
         cout << " 0. Salir " << endl;
         
         cout << endl;
@@ -40,7 +39,5 @@ void menu ()
         } else {
             productos(opcion);
         }
-
-        productos (opcion);
     }
 }
