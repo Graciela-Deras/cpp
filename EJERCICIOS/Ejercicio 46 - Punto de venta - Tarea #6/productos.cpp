@@ -34,6 +34,7 @@ void productos ( int opcion)
             default:
             {
                 cout << " Opcion no valida ";
+                system ("pause");
                 return;
                 break;
             }
@@ -73,6 +74,7 @@ void productos ( int opcion)
             default:
                 {
                     cout << " Opcion no valida ";
+                    system ("pause");
                     return;
                     break;
                 }
@@ -110,6 +112,7 @@ void productos ( int opcion)
             default:
             {
                 cout << " Opcion no valida ";
+                system ("pause");
                 return;
                 break;
             }
@@ -120,7 +123,13 @@ void productos ( int opcion)
         system ("pause");
         break;
     }
+    
     default:
-        break;
+        {
+            cout << " Opcion no valida " << endl;
+            
+            system ("pause");
+            break;
+        }
     }
 }

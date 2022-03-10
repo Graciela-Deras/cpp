@@ -32,7 +32,6 @@ void menu ()
         {
             break;
         }
-
         if ( opcion == 4)
         {
             imprimirFactura();
