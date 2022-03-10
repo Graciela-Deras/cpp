@@ -24,7 +24,7 @@ void productos ( int opcion)
         switch (opcionProducto)
         {
             case 1:
-                agregarProducto ( " 1 Capuccino - L. 40.00 ", 1, 40);
+                agregarProducto ( " 1 Capuccino -  L. 40.00 ", 1, 40);
                 break;
             
             case 2:
@@ -96,18 +96,18 @@ void productos ( int opcion)
 
         switch (opcionProducto)
         {
-        case 1:
-            agregarProducto (" 1 Pastel de Chocolate - L. 40.00 ", 1, 40);
+            case 1:
+                agregarProducto (" 1 Pastel de Chocolate - L. 40.00 ", 1, 40);
             break;
-
-        case 2:
-            agregarProducto (" 1 Semitas Caseras - L. 30.00 ", 1, 30);
+            
+            case 2:
+                agregarProducto (" 1 Semitas Caseras - L. 30.00 ", 1, 30);
             break;
-        
-        case 3: 
-            agregarProducto (" 1 Cheesecake - L. 35.00 ", 1, 35);
-        
-        default:
+            
+            case 3: 
+                agregarProducto (" 1 Cheesecake - L. 35.00 ", 1, 35);
+            
+            default:
             {
                 cout << " Opcion no valida ";
                 return;
