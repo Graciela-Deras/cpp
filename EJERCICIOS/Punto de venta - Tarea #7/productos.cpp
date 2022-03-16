@@ -1,8 +1,10 @@
 #include <iostream>
+#include "productos.h"
+#include "factura.h"
 
 using namespace std;
 
-extern void agregarProducto (string descripcion, int cantidad, double precio);
+void agregarProducto (string descripcion, int cantidad, double precio);
 
 void productos ( int opcion)
 {
@@ -57,7 +59,6 @@ void productos ( int opcion)
         cout << endl;
         cout << " Ingrese una opcion: ";
         cin  >> opcionProducto;
-        
         switch (opcionProducto)
         {
             case 1:
@@ -109,6 +110,7 @@ void productos ( int opcion)
             
             case 3: 
                 agregarProducto (" 1 Cheesecake - L. 35.00 ", 1, 35);
+            break;
             
             default:
             {
