@@ -39,6 +39,7 @@ int main(int argc, char const *argv[])
         else 
         {
             cout << "\n Perdiste, intentalo de nuevo :(" << endl;
+            system ("pause");
         }
 
         cout << endl;
