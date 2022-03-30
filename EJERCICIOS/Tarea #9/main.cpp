@@ -18,8 +18,8 @@ int main(int argc, char const *argv[])
         cout << " JUEGO DE DADOS " << endl;
         cout << " ============== " << endl;
         cout << "\n Si la suma del lanzamiento es un numero par usted gana, de lo contario pierde. " << endl;
-        cout << "\n Presione cualquier tecla la lanzar los dados: " ;
-        cin >> string;
+        cout << "\n Presione cualquier tecla la lanzar los dados: ";
+        cin >> lanzar;
         
         srand(time(NULL));
         
