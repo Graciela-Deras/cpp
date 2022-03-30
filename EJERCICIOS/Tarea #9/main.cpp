@@ -10,7 +10,7 @@ int main(int argc, char const *argv[])
     int resultado = 0, salir = 0;
     string lanzar;
 
-    while ( salir == 1 )
+    while ( salir == 0 )
     {
         system ("cls");
         cout << endl;
@@ -23,6 +23,7 @@ int main(int argc, char const *argv[])
         
         srand(time(NULL));
         
+        system ("cls");
         dado1 = rand() % 6 + 1;
         dado2 = rand() % 6 + 1;
         
@@ -39,12 +40,12 @@ int main(int argc, char const *argv[])
         else 
         {
             cout << "\n Perdiste, intentalo de nuevo :(" << endl;
-            system ("pause");
         }
 
         cout << endl;
-        cout << " Si desea volver a jugar presione el numero 1, de lo contrario presione otro numero: ";
+        cout << " Si desea volver a jugar presione el numero 0, de lo contrario presione otro numero: ";
         cin >> salir;
+        cout << endl;
     }
 
     return 0;
