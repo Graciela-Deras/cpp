@@ -12,7 +12,6 @@ int main(int argc, char const *argv[])
 
     while ( salir == 1 )
     {
-        system ("cls");
         cout << endl;
         cout << " ============== " << endl;
         cout << " JUEGO DE DADOS " << endl;
@@ -23,8 +22,8 @@ int main(int argc, char const *argv[])
         
         srand(time(NULL));
         
-        dado1 = rand() % 6 + 1;
-        dado2 = rand() % 6 + 1;
+        dado1 = rand() & 6 + 1;
+        dado2 = rand() & 6 + 1;
         
         resultado = (dado1 + dado2);
         
