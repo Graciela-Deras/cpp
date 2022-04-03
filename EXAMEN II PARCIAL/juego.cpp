@@ -3,7 +3,6 @@
 #include<conio.h>
 #include<stdlib.h>
 #include<time.h>
-#include "juego.h"
 
 using namespace std;
 
