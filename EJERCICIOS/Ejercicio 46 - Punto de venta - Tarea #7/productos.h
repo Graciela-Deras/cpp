@@ -1,1 +1,1 @@
-void productos ( int opcion)
+void productos ( int opcion);
