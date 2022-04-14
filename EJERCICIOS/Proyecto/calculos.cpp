@@ -3,14 +3,12 @@
 
 using namespace std;
 
-void totalPersonas ()
-{ 		
-    totalPersonas = (ninos + adultos + jovenes + terceraEdad);                   
-}
-
 void porcentaje ()
 {
+    float ninos = 0, jovenes = 0, adultos = 0, terceraEdad = 0, totalPersonas = 0;
     float porcentajeNinos = 0, porcentajeJovenes = 0, porcentajeAdultos = 0, porcentajeTerceraEdad = 0;
+    
+    totalPersonas = (ninos + adultos + jovenes + terceraEdad);     
 
 	porcentajeNinos = ninos / totalPersonas * 100;
 	porcentajeJovenes = jovenes / totalPersonas * 100;
