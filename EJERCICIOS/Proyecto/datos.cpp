@@ -6,21 +6,28 @@ using namespace std;
 
 void datos ()
 {
-    int salir = 0, edad = 0, persona = 0;
-	float ninos = 0, jovenes = 0, adultos = 0, terceraEdad = 0;
+    int salir = 1, edad = 0, persona = 0;
     string nombre;
+	float ninos = 0, jovenes = 0, adultos = 0, terceraEdad = 0;
 	
-	while ( true )
+	while ( salir == 1 )
 	{
 		system("cls");
-		persona++;  
-
+		persona++;   
+		cout << " ******************************************************* " << endl;                                                                 
 		cout << " CENSO DE EDADES DE LA POBLACION EN LA ZONA DE VILLANUEVA" << endl;
+		cout << " ******************************************************* " << endl; 
+
 		cout << " Persona No. " << persona << endl;
-        cout << " Ingrese su nombre: ";
+        cout << " Ingrese los datos personales solicidatos acontinuacion: " << endl;
+		cout << "Nombre: " << endl;
         cin >> nombre;
-		cout << " Ingrese su edad: ";
-		cin >> edad;                                                                    // Entrada de datos de las edades
+		cout << " Numero de Identidad: ";
+		cin >> identidad;
+		cout << " Aldea o Colonia " << endl; 
+		cin >> zona;
+		cout << "Edad" << endl;
+		cin >> edad;    
 		
 		if ( edad <= 12 )
 			ninos++;                                                                    // Contador: ninos = ninos + 1
@@ -35,15 +42,13 @@ void datos ()
 						terceraEdad++;  
 
     cout << " \n Desea continuar el censo con otra persona? " << endl;
-	cout << " Responda 1 si su respuesta es Si, de lo contrario ingrese otro numero: ";
+	cout << " Presione 1 para continuar, de lo contrario ingrese el numero 0: ";
 	cin >> salir;
-    if (salir == 1)
-    {
-        datos();
-    } else 
-    {
-        porcentaje();
-    }
+
+	if (salir == 0)
+	{
+		porcentaje ();
+	}
 
 	}    
 }
