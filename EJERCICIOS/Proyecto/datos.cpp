@@ -7,7 +7,7 @@ using namespace std;
 void datos ()
 {
     int salir = 1, edad = 0, persona = 0;
-    string nombre;
+    string nombre, identidad, residencia;
 	float ninos = 0, jovenes = 0, adultos = 0, terceraEdad = 0;
 	
 	while ( salir == 1 )
@@ -18,15 +18,15 @@ void datos ()
 		cout << " CENSO DE EDADES DE LA POBLACION EN LA ZONA DE VILLANUEVA" << endl;
 		cout << " ******************************************************* " << endl; 
 
-		cout << " Persona No. " << persona << endl;
+		cout << " Persona No." << persona << endl;
         cout << " Ingrese los datos personales solicidatos acontinuacion: " << endl;
-		cout << "Nombre: " << endl;
+		cout << " Nombre: ";
         cin >> nombre;
-		cout << " Numero de Identidad: ";
+		cout << " Numero de Identidad (sin guiones): ";
 		cin >> identidad;
-		cout << " Aldea o Colonia " << endl; 
-		cin >> zona;
-		cout << "Edad" << endl;
+		cout << " Aldea o Colonia: "; 
+		cin >> residencia;
+		cout << " Edad: ";
 		cin >> edad;    
 		
 		if ( edad <= 12 )
