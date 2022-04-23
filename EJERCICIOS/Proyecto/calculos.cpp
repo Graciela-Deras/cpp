@@ -17,7 +17,7 @@ void porcentaje ()
 	porcentajeTerceraEdad = terceraEdad / totalPersonas * 100;
 	
 	cout << endl;
-    cout << " El total de personas encuestadas  es: " << totalPersonas;
+    cout << " \n El total de personas encuestadas  es: " << totalPersonas;
 	cout << " \n El porcentaje de ninos en la zona es del: " << porcentajeNinos << " % " << endl;
 	cout << " \n El porcentaje de personas jovenes en la zona es del: " << porcentajeJovenes << " % " << endl;
 	cout << " \n El porcentaje de personas adultos en la zona es del: " << porcentajeAdultos << " % " << endl;
