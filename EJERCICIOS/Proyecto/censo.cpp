@@ -10,12 +10,12 @@ float porcentajeNinos = 0, porcentajeJovenes = 0, porcentajeAdultos = 0, porcent
 void condiciones()
 {
     system ("cls");
-	cout << "********************************************************" << endl;                                                                 
-	cout << "CENSO DE EDADES DE LA POBLACION EN LA ZONA DE VILLANUEVA" << endl;
-	cout << "********************************************************" << endl; 
+	cout << "=============================================" << endl;                                                                 
+	cout << "CENSO DE EDADES DE LA POBLACION EN VILLANUEVA" << endl;
+	cout << "=============================================" << endl; 
     cout << endl;
-    cout << "* Bienvenido *" << endl;
-    cout << "Digite la cantidad de personas a censar: ";
+    cout << "     -------- Bienvenido(a) -------- " << endl;
+    cout << "\nDigite la cantidad de personas a censar: ";
     cin >> cantidad;
     cout << endl;
 
@@ -27,14 +27,14 @@ void condiciones()
     {
         persona++; 
         system ("cls");
-        cout << "Persona No. " << persona << endl;
+        cout << "                  Persona No." << persona << endl;
         cout << "\nIngrese los datos solicitados a continuacion: " << endl;
         cout << "----------------------------------------------" << endl;
-        cout << "NOMBRE: ";
+        cout << "Nombre: ";
         cin >> nombres [i]; 
-        cout << "NUMERO DE IDENTIDAD (separado unicamente con guiones): ";
+        cout << "Numero de Id. (separado unicamente con guiones): ";
         cin >> identidad[i];
-        cout << "EDAD: ";
+        cout << "Edad: ";
         cin >> edad [i];
         cout << endl;
             
@@ -53,13 +53,13 @@ void condiciones()
 
     string datos[1][3]=
     {
-        { " NOMBRES ", " No.IDENTIDAD ", " EDADES "}
+        {"|NOMBRES|", " |No.IDENTIDAD| ", " |EDADES| "}
     };
 
     system ("cls");
-    cout << "  TABLA DE DATOS OBTENIDOS  " << endl;
-    cout << "  ======================== " << endl;
-
+    cout << "=====================================" << endl;
+    cout << "      TABLA DE DATOS OBTENIDOS       " << endl;
+    cout << "....................................." << endl;
     for (int a = 0; a < 1; a++)
     {
         for (int b = 0; b < 3; b++)
@@ -76,6 +76,7 @@ void condiciones()
         
     }
     cout << endl;
+    cout << "=====================================" << endl;
     system("pause"); 
 }
 
@@ -87,14 +88,16 @@ void porcentajes()
 	porcentajeTerceraEdad = terceraEdad / persona * 100;
     
     system ("cls");
-    cout << " --------------------------------------------------- " << endl;
-	cout << " TABLA DE PORCENTAJES DE DATOS RESULTANTES DEL CENSO " << endl;
-    cout << " --------------------------------------------------- " << endl;
-    cout << " Total de personas encuestadas: " << persona << endl;
-	cout << " Porcentaje de ninos en la zona: " << porcentajeNinos << " % " << endl;
-	cout << " Porcentaje de personas jovenes en la zona: " << porcentajeJovenes << " % " << endl;
-	cout << " Porcentaje de personas adultas en la zona: " << porcentajeAdultos << " % " << endl;
-	cout << " Porcentaje de personas de la tercera en la zona: " << porcentajeTerceraEdad << " % " << endl;
+    cout << " ====================================================== " << endl;
+	cout << " TABLA DE PORCENTAJES DE DATOS RESULTANTES DEL CENSO    " << endl;
+    cout << " ...................................................... " << endl;
     cout << endl;
+    cout << "  --> Total de personas encuestadas: " << persona << endl;
+	cout << "  --> Porcentaje de ninos en la zona: " << porcentajeNinos << "%" << endl;
+	cout << "  --> Porcentaje de personas jovenes en la zona: " << porcentajeJovenes << " % " << endl;
+	cout << "  --> Porcentaje de personas adultas en la zona: " << porcentajeAdultos << " % " << endl;
+	cout << "  --> Porcentaje de personas de la tercera en la zona: " << porcentajeTerceraEdad << " % " << endl;
+    cout << endl;
+    cout << " ======================================================= " << endl;
 }
 
