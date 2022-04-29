@@ -1,13 +1,14 @@
 #include <iostream>
+#include "censo.h"
 
 using namespace std;
 
-int main(int argc, char const *argv[])
-{
-    int persona = 0, cantidad = 0;
-    float ninos = 0, jovenes = 0, adultos = 0, terceraEdad = 0;
-    float porcentajeNinos = 0, porcentajeJovenes = 0, porcentajeAdultos = 0, porcentajeTerceraEdad = 0;  
+int persona = 0, cantidad = 0;
+float ninos = 0, jovenes = 0, adultos = 0, terceraEdad = 0;
+float porcentajeNinos = 0, porcentajeJovenes = 0, porcentajeAdultos = 0, porcentajeTerceraEdad = 0; 
 
+void condiciones()
+{
     system ("cls");
 	cout << "********************************************************" << endl;                                                                 
 	cout << "CENSO DE EDADES DE LA POBLACION EN LA ZONA DE VILLANUEVA" << endl;
@@ -17,11 +18,6 @@ int main(int argc, char const *argv[])
     cout << "Digite la cantidad de personas a censar: ";
     cin >> cantidad;
     cout << endl;
-    
-    string datos[1][3]=
-    {
-        { " NOMBRES ", " No.IDENTIDAD ", " EDADES "}
-    };
 
     string nombres [cantidad];
     string identidad [cantidad];
@@ -32,7 +28,7 @@ int main(int argc, char const *argv[])
         persona++; 
         system ("cls");
         cout << "Persona No. " << persona << endl;
-        cout << "Ingrese los datos solicitados a continuacion: " << endl;
+        cout << "\nIngrese los datos solicitados a continuacion: " << endl;
         cout << "==============================================" << endl;
         cout << "NOMBRE: ";
         cin >> nombres [i]; 
@@ -54,7 +50,12 @@ int main(int argc, char const *argv[])
 					if ( edad [i] >= 60 )
 						terceraEdad++;  
     }
-    
+
+    string datos[1][3]=
+    {
+        { " NOMBRES ", " No.IDENTIDAD ", " EDADES "}
+    };
+
     system ("cls");
     cout << "  TABLA DE DATOS OBTENIDOS  " << endl;
     cout << " ========================" << endl;
@@ -76,7 +77,10 @@ int main(int argc, char const *argv[])
     }
     cout << endl;
     system("pause"); 
-         
+}
+
+void porcentajes()
+{      
 	porcentajeNinos = ninos / persona * 100;
 	porcentajeJovenes = jovenes / persona * 100;
 	porcentajeAdultos = adultos / persona * 100;
@@ -92,7 +96,5 @@ int main(int argc, char const *argv[])
 	cout << " Porcentaje de personas adultas en la zona: " << porcentajeAdultos << " % " << endl;
 	cout << " Porcentaje de personas de la tercera en la zona: " << porcentajeTerceraEdad << " % " << endl;
     cout << endl;
-
-    return 0;
 }
 

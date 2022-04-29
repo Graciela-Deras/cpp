@@ -1,0 +1,2 @@
+void condiciones();
+void porcentajes();
