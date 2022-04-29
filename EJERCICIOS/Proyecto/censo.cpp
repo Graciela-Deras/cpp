@@ -14,7 +14,7 @@ void condiciones()
 	cout << "CENSO DE EDADES DE LA POBLACION EN LA ZONA DE VILLANUEVA" << endl;
 	cout << "********************************************************" << endl; 
     cout << endl;
-
+    cout << "* Bienvenido *" << endl;
     cout << "Digite la cantidad de personas a censar: ";
     cin >> cantidad;
     cout << endl;
@@ -29,7 +29,7 @@ void condiciones()
         system ("cls");
         cout << "Persona No. " << persona << endl;
         cout << "\nIngrese los datos solicitados a continuacion: " << endl;
-        cout << "==============================================" << endl;
+        cout << "----------------------------------------------" << endl;
         cout << "NOMBRE: ";
         cin >> nombres [i]; 
         cout << "NUMERO DE IDENTIDAD (separado unicamente con guiones): ";
