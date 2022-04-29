@@ -58,7 +58,7 @@ void condiciones()
 
     system ("cls");
     cout << "  TABLA DE DATOS OBTENIDOS  " << endl;
-    cout << " ========================" << endl;
+    cout << "  ======================== " << endl;
 
     for (int a = 0; a < 1; a++)
     {
